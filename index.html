@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terra</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #349348;
+            background-image: url("background-grid.svg");
+            background-size: 1300px;
+            background-position: -31px -42px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2691D0;
+        }
+
+
+        #frame {
+            flex: 1;
+            background-image: url("frame.svg");
+            background-repeat: no-repeat;
+            background-position: right -202px top -420px;
+            background-size: calc(100% + 200px);
+        }
+
+
+        #contents {
+            display: flex;
+            background-image: url("non-hero@2x.png");
+            background-position: right -104px top -30px;
+            background-size: auto 1077px;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+
+        #copy {
+            width: 537px;
+            margin-top: 7%;
+            margin-left: 18%;
+        }
+
+        #title, #slug {
+            color: #57A146;
+        }
+
+        #title {
+            font-size: 55px;
+            line-height: 67px;
+        }
+
+        #slug {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .text {
+            white-space: pre-line;
+            margin-top: 16px;
+        }
+
+
+        #hero-logo {
+            flex-grow: 1;
+            background-image: url("terra-logo.svg");
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            margin-top: 5%;
+        }
+
+
+        #footer {
+            background-color: #4A4A4A;
+            border-top: 4px solid #AFD139;
+            padding: 22px 0 24px 15%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 45px;
+        }
+
+        #terra-logo {
+            width: 70px;
+            height: 70px;
+            background-image: url("terra-logo-bw.svg");
+        }
+
+        #broad-logo {
+            width: 140px;
+            height: 35px;
+            background-image: url("broad-logo.svg");
+        }
+
+        #verily-logo {
+            width: 112px;
+            height: 42px;
+            background-image: url("verily-logo.svg");
+        }
+    </style>
+</head>
+<body>
+<div id="frame">
+    <div id="contents">
+        <div id="copy">
+            <div id="title">Welcome to Terra</div>
+            <div id="slug">Spend time doing science, not wrangling software and systems</div>
+            <div class="text">
+                Welcome to the future home of Terra, a cloud-native
+                platform for biomedical researchers to access data,
+                run analysis tools, and collaborate. Created by
+                The Broad Institute and Verily, Terra embodies the
+                open standards-based principles of the <a href="">Data Biosphere</a>.
+            </div>
+            <div class="text">To learn more, contact us at <a href="mailto:info@terra.bio">info@terra.bio</a>
+            </div>
+        </div>
+        <div id="hero-logo"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="logo" id="terra-logo"></div>
+    <div class="logo" id="broad-logo"></div>
+    <div class="logo" id="verily-logo"></div>
+</div>
+</body>
+</html>
