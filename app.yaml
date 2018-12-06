@@ -4,7 +4,7 @@ threadsafe: true
 default_expiration: "2m"
 
 handlers:
-  - url: /(.*\.(png|svg))
+  - url: /(.*\.(ico|png|svg))
     static_files: \1
     upload: (.*)
     secure: always
