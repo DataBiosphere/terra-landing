@@ -7,6 +7,7 @@
     <style type="text/css">
         html, body {
             height: 100%;
+            min-width: 1280px;
         }
 
         body {
@@ -30,27 +31,35 @@
 
         #frame {
             flex: 1;
-            background-image: url("frame.svg");
-            background-repeat: no-repeat;
-            background-position: right -202px top -420px;
-            background-size: calc(100% + 200px);
+            background:
+                url("terra-logo.svg") left calc(50% + 375px) top 63px/323px no-repeat,
+                url("non-hero@2x.png") left calc(50% + 225px) top -30px/auto 1077px no-repeat,
+        }
+
+        @media screen and (min-width: 2000px) {
+            body {
+                font-size: 24px;
+                line-height: 42px;
+            }
+
+            #frame {
+                background:
+                    url("terra-logo.svg") left calc(50% + 380px) top 80px/485px no-repeat,
+                    url("non-hero@2x.png") left calc(50% + 150px) top -105px/auto 1610px no-repeat,
+                    url("frame.svg") center top -640px/2204px no-repeat
+            }
         }
 
 
         #contents {
-            display: flex;
-            background-image: url("non-hero@2x.png");
-            background-position: right -104px top -30px;
-            background-size: auto 1077px;
-            background-repeat: no-repeat;
-            height: 100%;
+            width: 1280px;
+            margin: auto;
         }
 
 
         #copy {
-            width: 537px;
-            margin-top: 7%;
-            margin-left: 18%;
+            margin-top: 90px;
+            margin-left: 230px;
         }
 
         #title, #slug {
@@ -60,6 +69,7 @@
         #title {
             font-size: 55px;
             line-height: 67px;
+            margin-bottom: 10px;
         }
 
         #slug {
@@ -68,18 +78,28 @@
         }
 
         .text {
-            white-space: pre-line;
             margin-top: 16px;
         }
 
+        @media screen and (min-width: 2000px) {
+            #copy {
+                margin-top: 120px;
+                margin-left: -150px;
+            }
 
-        #hero-logo {
-            flex-grow: 1;
-            background-image: url("terra-logo.svg");
-            background-size: 65%;
-            background-repeat: no-repeat;
-            background-position: center top;
-            margin-top: 5%;
+            #title {
+                font-size: 82px;
+                line-height: 101px;
+            }
+
+            #slug {
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            .text {
+                margin-top: 30px;
+            }
         }
 
 
@@ -89,6 +109,7 @@
             padding: 22px 0 24px 15%;
             display: flex;
             align-items: center;
+            flex-shrink: 0;
         }
 
         .logo {
@@ -122,18 +143,20 @@
     <div id="contents">
         <div id="copy">
             <div id="title">Welcome to Terra</div>
-            <div id="slug">Spend time doing science, not wrangling software and systems</div>
+            <div id="slug">
+                Spend time doing science, not wrangling<br>
+                software and systems
+            </div>
             <div class="text">
-                Welcome to the future home of Terra, a cloud-native
-                platform for biomedical researchers to access data,
-                run analysis tools, and collaborate. Created by
-                The Broad Institute and Verily, Terra embodies the
+                Welcome to the future home of Terra, a cloud-native<br>
+                platform for biomedical researchers to access data,<br>
+                run analysis tools, and collaborate. Created by<br>
+                The Broad Institute and Verily, Terra embodies the<br>
                 open standards-based principles of the <a href="">Data Biosphere</a>.
             </div>
             <div class="text">To learn more, contact us at <a href="mailto:info@terra.bio">info@terra.bio</a>
             </div>
         </div>
-        <div id="hero-logo"></div>
     </div>
 </div>
 <div id="footer">
