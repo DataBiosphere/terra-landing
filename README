@@ -1,0 +1,2 @@
+To deploy:
+    gcloud app deploy --project=terra-landing --promote --stop-previous-version

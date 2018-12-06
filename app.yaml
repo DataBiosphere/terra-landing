@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+default_expiration: "2m"
+
+handlers:
+  - url: /(.*\.(png|svg))
+    static_files: \1
+    upload: (.*)
+    secure: always
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+    secure: always
