@@ -110,14 +110,29 @@
         }
 
 
-        #footer {
+        #footer-wrapper {
             background-color: #4A4A4A;
             border-top: 2px solid #AFD139;
-            padding: 11px 0 11px 15%;
+            padding: 11px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #footer {
+            width: 1050px;
+            margin-left: 230px;
             height: 36px;
             display: flex;
             align-items: stretch;
             flex-shrink: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 1681px) {
+            #footer {
+                margin-left: -150px;
+                width: 1430px;
+            }
         }
 
         .logo {
@@ -165,10 +180,12 @@
         </div>
     </div>
 </div>
-<div id="footer">
-    <a class="logo" id="broad-logo" href="https://www.broadinstitute.org"></a>
-    <div id="spacer"></div>
-    <a class="logo" id="verily-logo" href="https://verily.com"></a>
+<div id="footer-wrapper">
+    <div id="footer">
+        <a class="logo" id="broad-logo" href="https://www.broadinstitute.org"></a>
+        <div id="spacer"></div>
+        <a class="logo" id="verily-logo" href="https://verily.com"></a>
+    </div>
 </div>
 </body>
 </html>
