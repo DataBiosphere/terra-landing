@@ -112,10 +112,11 @@
 
         #footer {
             background-color: #4A4A4A;
-            border-top: 4px solid #AFD139;
-            padding: 22px 0 24px 15%;
+            border-top: 2px solid #AFD139;
+            padding: 11px 0 11px 15%;
+            height: 36px;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             flex-shrink: 0;
         }
 
@@ -123,24 +124,21 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            margin-right: 45px;
-        }
-
-        #terra-logo {
-            width: 70px;
-            height: 70px;
-            background-image: url("terra-logo-bw.svg");
         }
 
         #broad-logo {
-            width: 140px;
-            height: 35px;
+            width: 75px;
             background-image: url("broad-logo.svg");
         }
 
+        #spacer {
+            padding-right: 25px;
+            margin-right: 25px;
+            border-right: 1px solid white;
+        }
+
         #verily-logo {
-            width: 112px;
-            height: 42px;
+            width: 61px;
             background-image: url("verily-logo.svg");
         }
     </style>
@@ -168,9 +166,9 @@
     </div>
 </div>
 <div id="footer">
-    <div class="logo" id="terra-logo"></div>
-    <a href="https://www.broadinstitute.org"><div class="logo" id="broad-logo"></div></a>
-    <a href="https://verily.com"><div class="logo" id="verily-logo"></div></a>
+    <a class="logo" id="broad-logo" href="https://www.broadinstitute.org"></a>
+    <div id="spacer"></div>
+    <a class="logo" id="verily-logo" href="https://verily.com"></a>
 </div>
 </body>
 </html>
